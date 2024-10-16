@@ -22,7 +22,7 @@
     },
     "action": {
       "default_popup": "popup.html",
-      "default_icon": "resources/FindMeIcon.png"
+      "default_icon": "FindMeIcon.png"
     },
     "content_scripts": [
       {
