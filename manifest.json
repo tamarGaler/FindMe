@@ -4,11 +4,7 @@
     "version": "1.0",
     "description": "Find photos of yourself from a Google Drive album using face recognition.",
     "permissions": [
-        "identity",
-        "identity.email",
-        "storage",
-        "activeTab",
-        "scripting"
+        "identity"
     ],
     "background": {
         "service_worker": "background.js"
