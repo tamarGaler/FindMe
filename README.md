@@ -22,7 +22,7 @@ This Chrome extension was a fun side project created to learn how to build a sim
 ### Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/photo-finder-extension.git
+    git clone https://github.com/tamarGaler/FindMe.git
     ```cd
 2. Open Chrome and navigate to `chrome://extensions/`.
 3. Enable "Developer mode" by toggling the switch at the top right.
