@@ -1,4 +1,4 @@
-![FindMeClean](resources/FindMeClean.png)
+![FindMeClean](FindMeClean.png)
 
 # Photo Finder Chrome Extension
 
