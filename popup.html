@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Select Album or Enter Link</h2>
+
+        <div>
+            <label for="album-link">Google Drive Album Link:</label>
+            <input type="text" id="album-link" placeholder="Paste Google Drive folder link here" />
+        </div>
+
+        <div>
+            <label for="album-select">Or Select from Albums:</label>
+            <select id="album-select" disabled>
+                <option value="">Loading...</option>
+            </select>
+        </div>
+
+
+        <form id="upload-form">
+            <div>
+                <h2>Select Person To Find</h2>
+                <label for="file-upload">Choose one clear photo:</label>
+                <br>
+                <input type="file" id="file-upload" />
+            </div>
+        </form>
+
+
+        <button id="find-my-photos">Find My Photos</button>
+
+        <label id="progress-status"></label>
+
+        <div id="photo-container" class="photo-grid">
+            <!-- Photos from the selected album will be displayed here -->
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

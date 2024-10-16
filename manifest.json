@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "Google Drive Photo Matcher",
+    "version": "1.0",
+    "description": "Find photos of yourself from a Google Drive album using face recognition.",
+    "permissions": [
+        "identity",
+        "identity.email",
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "oauth2": {
+      "client_id": "452844465725-a43aenkunmnvair3btc44v480vi5q6ei.apps.googleusercontent.com",
+      "scopes": [
+        "https://www.googleapis.com/auth/drive.readonly",
+        "https://www.googleapis.com/auth/cloud-vision"
+      ]
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "resources/FindMeIcon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://drive.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
