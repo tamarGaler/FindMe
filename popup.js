@@ -1,6 +1,6 @@
 let userPhotos = [];
 const progressStatus = document.getElementById('progress-status');
-const maxImageCount = 500;
+const maxImageCount = 1000;
 
 async function authenticateUser() {
     return new Promise((resolve, reject) => {
@@ -246,7 +246,7 @@ function calculateFeatureVector(landmarks) {
     return distances;
 }
 
-function compareFaces(face1, face2, threshold = 0.78) {
+function compareFaces(face1, face2, threshold = 0.35) {
     // Calculate feature vectors for both faces
     const vector1 = calculateFeatureVector(face1.landmarks);
     const vector2 = calculateFeatureVector(face2.landmarks);
